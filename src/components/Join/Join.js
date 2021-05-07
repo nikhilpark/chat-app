@@ -7,14 +7,7 @@ export default function SignIn() {
   const [name, setName] = useState('');
   const [room, setRoom] = useState('');
 
-  function randomStr(len, arr) {
-    var ans = '';
-    for (var i = len; i > 0; i--) {
-        ans += 
-          arr[Math.floor(Math.random() * arr.length)];
-    }
-    return ans;
-}
+
 
   return (
     <div className="joinOuterContainer">
@@ -32,7 +25,7 @@ export default function SignIn() {
         <div className="mt-20">
         <span className="secret"> or, Join a secret room anonymously</span>
         <Link  to={`/chat?name=Anonymous&room=${Math.random().toString(36).slice(2)}`}>
-          &nbsp;Here!
+          &nbsp; Here!
         </Link>
         </div>
         
