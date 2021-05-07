@@ -2,6 +2,7 @@ const express = require('express');
 const socketio = require('socket.io');
 const http = require('http');
 const cors = require('cors');
+const socketio = require('socket.io');
 const { addUser, removeUser, getUser, getUserInRoom } = require('./users.js');
 
 
@@ -11,12 +12,7 @@ const { get } = require('https');
 
 const app = express();
 const server = http.createServer(app); 
-const io = require("socket.io")(server, {
-    cors: {
-      origin: "https://chat-frontend00.herokuapp.com/",
-      methods: ["GET", "POST"]
-    }   
-  });
+const io = socketio(server);
 
 app.use(router)
 app.use(cors());
