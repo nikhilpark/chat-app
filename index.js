@@ -14,7 +14,7 @@ const server = http.createServer(app);
 const io = socketio(server);
 app.use(cors())
 server.use(cors())
-io.use((cors())
+io.use(cors())
        
 app.use(router)
 
