@@ -12,9 +12,9 @@ const { get } = require('https');
 const app = express();
 const server = http.createServer(app); 
 const io = socketio(server);
-app.use(cors())
-]
+
 app.use(router)
+app.use(cors())
 
 
 io.on('connection',(socket)=> {
