@@ -23,7 +23,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-   "proxy": "https://chat-backend00.herokuapp.com/",
+   "proxy": "https://chat-backend00.herokuapp.com:80",
   "eslintConfig": {
     "extends": [
       "react-app",
