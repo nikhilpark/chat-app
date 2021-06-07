@@ -9,7 +9,7 @@ export default function Messages({name,messages}) {
     console.log(name)
     return (
             
-            <ScrollToBottom className="messages">
+            <ScrollToBottom style={{overflow:"auto"}} className="messages">
                 {messages.map((message, i) => <div key={i}><Message message={message} name={name}/></div>)}
             </ScrollToBottom>
     )
