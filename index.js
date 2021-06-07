@@ -12,7 +12,7 @@ const app = express();
 const server = http.createServer(app); 
 const io = require("socket.io")(server, {
     cors: {
-      origin: "http://chat-frontend00.herokuapp.com:80",
+      origin: *,
       credentials: true,
       methods: ["GET", "POST"]
     }   
